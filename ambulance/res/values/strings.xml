@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Rapidambulance</string>
+    <string-array name="locationName">
+        <item>Dhaka</item>
+        <item>Sylhet</item>
+        <item>Khulna</item>
+        <item>Mymensingh</item>
+        <item>Rajshahi</item>
+        <item>Rangpur</item>
+        <item>Barisal</item>
+    </string-array>
+    <string-array name="doctorsName">
+        <item>Desh Ambulance</item>
+        <item>As Ambulance</item>
+        <item>Air Ambulance</item>
+        <item>HR Ambulance</item>
+        <item>Rp Ambulance</item>
+    </string-array>
+    <string-array name="catagory">
+        <item>Open 24 hours</item>
+        <item>Open 24 hours</item>
+        <item>Open 24 hours</item>
+        <item>Open 24 hours</item>
+        <item>Open 24 hours</item>
+    </string-array>
+    <string-array name="availableornot">
+        <item>deshambulance.com</item>
+        <item>asambulance.com</item>
+        <item>airambulance.com</item>
+        <item>Hrambulance.com</item>
+        <item>rapidambulance.com</item>
+    </string-array>
+    <string-array name="adress">
+        <item> Dhaka</item>
+        <item>Dhaka</item>
+        <item>Dhaka</item>
+        <item>Dhaka</item>
+        <item>Dhaka</item>
+    </string-array>
+
+    <string-array name="number">
+        <item> +8801712345678</item>
+        <item>+8801819206587</item>
+        <item>+880160001111</item>
+        <item>+8801712258741</item>
+        <item>+8801712346589</item>
+
+    </string-array>
+
+
+</resources>

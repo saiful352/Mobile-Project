@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".Login_From">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOG-IN"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textColor="@color/titlecolor"
+        android:layout_marginTop="5dp"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="189dp"
+        android:padding="50dp"
+        android:src="@drawable/loginicon" />
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/colorAccent"
+        >
+
+        <EditText
+            android:id="@+id/login_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="@color/text_color"
+            android:textSize="20sp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/colorAccent"
+        app:passwordToggleEnabled="true"
+        >
+
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textColor="@color/text_color"
+            android:textSize="20sp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Login"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_rounded"
+        />
+
+    <TextView
+        android:layout_width="351dp"
+        android:layout_height="26dp"
+        android:text="If you are not Register, Register First"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/text_color"
+        android:textSize="15sp" />
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Register"
+        android:onClick="btn_register1"
+        android:background="@drawable/button_rounded"
+        />
+
+</LinearLayout>

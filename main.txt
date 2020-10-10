@@ -1,0 +1,64 @@
+package com.example2020.Doctor_Information;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
+import com.denzcoskun.imageslider.ImageSlider;
+import com.denzcoskun.imageslider.models.SlideModel;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MainActivity extends AppCompatActivity {
+
+
+ Button diease_Doctors,hospital_Doctors,ambulance_Service,blood_Service;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+
+        ImageSlider imageSlider=findViewById(R.id.slider);
+        diease_Doctors=findViewById(R.id.diease_Doctors);
+        hospital_Doctors=findViewById(R.id.hospital_Doctors);
+        ambulance_Service=findViewById(R.id.ambulance_Service);
+        blood_Service=findViewById(R.id.blood_Service);
+
+        List<SlideModel>slideModels =new ArrayList<>();
+        slideModels.add(new SlideModel("https://mdxvitals-res.cloudinary.com/image/upload/q_auto/f_auto/w_550,dpr_auto/v1539099898/homepage_vector_doctors-02.png","                             Looking for a Doctor?\n"));
+        slideModels.add(new SlideModel("https://www.thailandmedical.news/uploads/hospital/5dcac1c28078d_rural_hospital_access.jpg",""));
+        slideModels.add(new SlideModel("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a6f8f055720289.599095b3a6153.jpg","                                 Ambulance Service"));
+        slideModels.add(new SlideModel("https://www.apparelresources.com/wp-content/uploads/2016/01/donate-blood-2.jpg","                                    Blood Service"));
+        imageSlider.setImageList(slideModels,true);
+
+
+
+        hospital_Doctors.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this,com.example2020.Doctor_Information.Hospital_List.class);
+                startActivity(intent);
+
+            }
+        });
+
+        diease_Doctors.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this,com.example2020.Doctor_Information.find_specialist.class);
+                startActivity(intent);
+
+            }
+        });
+
+
+
+
+    }
+}

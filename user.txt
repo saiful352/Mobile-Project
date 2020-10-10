@@ -1,0 +1,41 @@
+package com.example2020.Doctor_Information;
+
+public class user {
+
+    private String name;
+    private String speciality;
+    private String visiting_hour;
+
+    public user() {
+    }
+
+    public user(String name, String speciality, String visiting_hour) {
+        this.name = name;
+        this.speciality = speciality;
+        this.visiting_hour = visiting_hour;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getSpeciality() {
+        return speciality;
+    }
+
+    public void setSpeciality(String speciality) {
+        this.speciality = speciality;
+    }
+
+    public String getVisiting_hour() {
+        return visiting_hour;
+    }
+
+    public void setVisiting_hour(String visiting_hour) {
+        this.visiting_hour = visiting_hour;
+    }
+}
